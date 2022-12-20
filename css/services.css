@@ -1,0 +1,64 @@
+/* basic setup override */
+
+main {
+    justify-content: center;
+    flex-direction: row !important;
+}
+
+/* main setup */
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 25%;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    border: solid white 0;
+    box-shadow: 0 0 0 4px black;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+}
+
+div.sec-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-content__icon {
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+span.sec-content {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+p.sec-content {
+    font-size: 15px;
+    text-align: center;
+}
+
+/* mobile support */
+
+@media only screen and (max-width: 1500px) {
+    .sec-content__icon {
+        font-size: 4em;
+    }
+
+    span.sec-content {
+        font-size: 20px;
+    }
+
+    p.sec-content {
+        font-size: 13px;
+    }
+}

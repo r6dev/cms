@@ -1,0 +1,193 @@
+/* basic setup override */
+
+
+/* main setup */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* section 1 */
+
+.sec-1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    flex: 0 0 auto;
+    border: solid white 0;
+    border-bottom-width: 4px;
+    border-top-width: 4px;
+    color: white;
+    background-color: black;
+}
+
+div.sec-1__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+div.sec-1__content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3.5em;
+}
+
+h1.sec-1__content {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+a.sec-1__content:hover {
+    transform: translateY(-4px);
+}
+
+button.sec-1__content {
+    margin-right: 10px;
+    text-transform: capitalize;
+    border-color: white;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+button.sec-1__content:hover {
+    color: white;
+    background-color: black;
+}
+
+.sec-1__content__btn-wrapper {
+    display: flex;
+}
+
+div.sec-1__content__img {
+    display: block;
+    height: 25em;
+    width: 25em;
+    background-image: url("/images/assets/illustrations/quirky-eye-looking-through-magnifying-glass-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* section 2 */
+
+.sec-2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    flex: 0 0 auto;
+    border: solid black 0;
+    border-top-width: 4px;
+    background-color: white;
+    color: black;
+}
+
+div.sec-2__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+div.sec-2__content {
+    display: flex;
+    flex-direction: column;
+}
+
+h2.sec-2__content {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p.sec-2__content {
+    text-align: center;
+    font-size: 17px;
+}
+
+div.sec-2__grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    width: 100%;
+    height: 15em;
+}
+
+div.sec-2__grid__item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 5px;
+    flex: 1;
+    border: solid black 4px;
+    transition: 0.2s;
+    color: black;
+}
+
+div.sec-2__grid__item:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-5px);
+}
+
+span.sec-2__grid__item__icon {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+span.sec-2__grid__item__title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+p.sec-2__grid__item__desc {
+    font-size: small;
+}
+
+.decret {
+    position: absolute !important;
+    bottom: 15px;
+    color: white;
+    font-size: 10px !important;
+}
+
+/* mobile support */
+
+@media only screen and (max-width: 900px) {
+    div.sec-1__content__img {
+        display: none;
+    }
+
+    div.sec-1__content {
+        padding: 0;
+    }
+
+    h1.sec-1__content {
+        text-align: center;
+    }
+
+    .sec-1__content__btn-wrapper {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h1.sec-1__content {
+        font-size: 2.2em;
+    }
+
+    h2.sec-2__content {
+        font-size: 2.2em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    p.sec-2__content {
+        font-size: 15px;
+    }
+}

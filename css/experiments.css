@@ -1,0 +1,149 @@
+/* basic setup override */
+
+body {
+    background-color: black !important;
+    color: white !important;
+}
+
+.wrapper {
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* experiments */
+
+div.experiments {
+    display: flex;
+    border: solid white 0;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.experiments-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10em;
+    height: 100%;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+}
+
+div.experiments__header {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+span.experiments__header {
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+div.experiments__header__params {
+    display: grid;
+    grid-template-columns: 5em 5em 5em 15em;
+}
+
+span.experiments__header__params {
+    font-size: 14px;
+}
+
+.experiments__body {
+    display: flex;
+    height: 100%;
+}
+
+ul.experiments-list {
+    border-top: solid white 2px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+li.experiments-list {
+    display: grid;
+    grid-template-columns: 5em 5em 5em 15em;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 25px;
+    border: solid white 0;
+    border-bottom-width: 2px;
+    height: 2.5em;
+    transition: 0.35s;
+    color: white;
+}
+
+li.experiments-list:hover {
+    color: black;
+    background-color: white;
+}
+
+li.experiments-list:active {
+    color: white;
+    background-color: black;
+}
+
+span.experiments-list {
+    font-size: 12px;
+}
+
+.li-hidden {
+    display: none;
+}
+
+/* filter setup */
+
+.btn-filter {
+    position: absolute;
+    right: 25px;
+}
+
+.filter-list {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    position: absolute;
+    right: 25px;
+    transform: translateY(2em);
+    width: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    height: auto;
+    border: solid white 4px;
+    box-shadow: 0px 0px 0px 4px black;
+    background-color: black;
+    pointer-events: none;
+    color: white;
+    font-weight: 500;
+}
+
+.filter-list-active {
+    display: flex;
+    pointer-events: all;
+}
+
+div.filter-list__row {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+}
+
+span.filter-list__row {
+    font-size: .7em;
+}
+
+.filter-icon {
+    margin-right: 5px;
+}

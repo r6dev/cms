@@ -1,0 +1,101 @@
+/* basic setup override */
+
+/* main setup */
+
+section.sec-1 {
+    display: flex;
+    justify-content: flex-start;
+    flex: 0 0 auto;
+    flex-grow: 1;
+}
+
+div.sec-1__box {
+    display: flex;
+    flex: 0 40%;
+    border: solid white 0;
+    box-shadow: 2px 0 0 2px black;
+    color: white;
+    background-color: black;
+    background-image: url("/images/assets/illustrations/quirky-key-opening-a-lock-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-right-width: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+article.sec-1__article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15em;
+    padding-right: 15em;
+    flex: 0 60%;
+}
+
+div.sec-1__article {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.sec-1__article__img {
+    display: none;
+    background-image: url("/images/assets/illustrations/quirky-safe-deposit.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 15px;
+}
+
+img.sec-1__article {
+    height: 10em;
+    width: 10em;
+}
+
+h1.sec-1__article {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+
+p.sec-1__article {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* mobile support */
+
+@media only screen and (max-width: 1500px) {
+    div.sec-1__box {
+        display: none;
+    }
+
+    article.sec-1__article {
+        padding-left: 15px;
+        padding-right: 15px;
+        flex: 1;
+    }
+
+    div.sec-1__article {
+        align-items: center;
+        text-align: center;
+    }
+
+    h1.sec-1__article {
+        font-size: 24px;
+    }
+
+    p.sec-1__article {
+        font-size: 14px;
+    }
+
+    .sec-1__article__img {
+        display: block;
+    }
+}

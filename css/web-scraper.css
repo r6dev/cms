@@ -1,0 +1,75 @@
+/* basic setup override */
+
+h1 {
+    font-size: 1em !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+}
+
+body {
+    font-family: 'pico-8_monoregular';
+    background-color: black !important;
+    color: white !important;
+}
+
+/* main setup */
+
+.sec-1 {
+    display: flex;
+    flex-direction: column;
+    color: #b9b8b9;
+    font-size: 18px;
+    padding: 3.5em;
+    text-transform: uppercase !important;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+div.information {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+    line-height: 7.5mm;
+}
+
+h1.information {
+    margin-bottom: 1.5em;
+}
+
+span.information:hover {
+    color: #b9b8b9;
+}
+
+div.command-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input.command-line {
+    height: 100%;
+    width: 100%;
+    font-family: 'pico-8_monoregular';
+    outline: none;
+    font-size: 20px;
+    color: #b9b8b9;
+    border: none;
+    background-color: transparent;
+}
+
+input.command-line::placeholder {
+    color: #b9b8b9;
+    opacity: 1;
+}
+
+input.command-line:-ms-input-placeholder {
+    color: #b9b8b9;
+}
+
+input.command-line::-ms-input-placeholder {
+    color: #b9b8b9;
+}

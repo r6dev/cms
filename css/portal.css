@@ -1,0 +1,223 @@
+/* basic setup override */
+
+body {
+    overflow: hidden;
+}
+
+header {
+    justify-content: center;
+    border: solid black 0;
+    border-bottom-width: 2px;
+}
+
+/* header setup */
+
+.header__wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header__logo {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/images/logos/third-party/portal-logo.png");
+    transition: 0.3s;
+}
+
+.header__logo:hover {
+    transform: rotate(25deg);
+}
+
+.header__logo:active {
+    transform: rotate(50deg);
+}
+
+/* main setup */
+
+section {
+    display: flex;
+    border: solid black 0;
+    border-bottom-width: 2px;
+}
+
+.sec-1 {
+    flex: 0 40%;
+    justify-content: center;
+}
+
+.sec-1__article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 100%;
+    border: solid black 0;
+    background-image: url("/images/assets/other/noise-pattern-2.png");
+    transition: 0.35s;
+}
+
+.sec-1__article:hover {
+    flex: 0 75%;
+    border-right-width: 2px;
+}
+
+.sec-1__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sec-1__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sec-1__title {
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.sec-1__title:hover {
+    transform: translateY(-4px);
+    color: #c8d6e5;;
+}
+
+.sec-1__description:hover {
+    transform: translateY(4px);
+}
+
+.sec-1__container {
+    display: flex;
+    flex: 1;
+    border: solid black 0;
+    background-image: url("/images/assets/illustrations/urban-line-portal-line.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    transition: 0.35s;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sec-1__container:hover {
+    flex: 0 25%;
+    border-left-width: 2px;
+}
+
+.sec-1__credits {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.sec-1__credits:hover {
+    color: black !important;
+}
+
+.sec-2 {
+    flex: 1;
+}
+
+.sec-2__article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+    transition: 0.35s;
+    justify-content: center;
+}
+
+.sec-2__article:hover {
+    flex: 0 75%;
+}
+
+.sec-2__article__title {
+    font-size: 2.5em;
+}
+
+.sec-2__article--1 {
+    border: solid white 0;
+    border-right-width: 2px;
+    color: white;
+    background-image: url("/images/assets/other/noise-pattern-2.png");
+    background-color: black;
+}
+
+.btn-cms {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.25s;
+}
+
+.btn-cms:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.sec-2__article--1__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+.sec-2__article--1__button {
+    margin-top: 10px;
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-weight: 600;
+    width: 125px;
+    height: 40px;
+    transition: 0.25s;
+}
+
+.sec-2__article--1__button:hover {
+    background-color: white;
+    color: black;
+}
+
+.sec-2__article--2 {
+    border: solid black 0;
+    border-left-width: 2px;
+}
+
+.sec-2__article--2__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+.sec-2__article--2__button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    width: 125px;
+    height: 40px;
+    transition: 0.25s;
+}
+
+.sec-2__article--2__button:hover {
+    background-color: transparent;
+    color: black;
+}

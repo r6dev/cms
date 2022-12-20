@@ -1,0 +1,5 @@
+background color: white
+primary color: black
+secondary color: #f8f8f8, #DFE1E5, #EFF2F3
+text color: black
+icon color: black

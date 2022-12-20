@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Globe - a RSIX creation" />
+    <link
+      rel="shortcut icon"
+      href="images/logos/favicon/favicon-black.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/setup.css" />
+    <meta
+      name="description"
+      content="cms is an experimental testing ground created by RSIX to share and host other experimental projects"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <title>cms - an RSIX experiment</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header">
+        <div class="header-box">
+          <a href="/">
+            <img
+              src="/images/logos/v1/cms-v1-white.png"
+              alt="website logo for header element"
+              class="header-logo"
+            />
+          </a>
+          <div class="navbar">
+            <a href="/embed-pages/home.html" class="navbar" target="page"
+              ><span>home</span></a
+            >
+            <a href="https://example.com" class="navbar" target="_blank"
+              ><span>RSIX</span></a
+            >
+            <a href="/embed-pages/services.html" class="navbar" target="page"
+              ><span>services</span></a
+            >
+            <a href="https://example.com" class="navbar" target="_blank"
+              ><span>client</span></a
+            >
+            <a href="/pages/portal.html" class="navbar"><span>portal</span></a>
+            <a href="/embed-pages/experiments.html" target="page"
+              ><span class="material-symbols-outlined header-material-icon">
+                science
+              </span></a
+            >
+            <!--<a href="/embed-pages/search.html" target="page"
+              ><span class="material-symbols-outlined header-material-icon">
+                search
+              </span></a
+            >!-->
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <iframe
+          src="/embed-pages/home.html"
+          frameborder="0"
+          name="page"
+          loading="eager"
+          sandbox="allow-scripts"
+        ></iframe>
+      </main>
+      <footer id="footer">
+        <div class="footer-wrapper">
+          <div class="footer__item">
+            <span class="footer__item">contact</span>
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="mailto:contact.RSIX.cc@gmail.com">email</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <span class="footer__item">information</span>
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="/embed-pages/about.html" target="page">about cms</a>
+              </li>
+              <li class="footer__list__item">
+                <a href="/embed-pages/services.html" target="page">services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("placeholder");
+      </script>
+    <![endif]-->
+  </body>
+</html>
